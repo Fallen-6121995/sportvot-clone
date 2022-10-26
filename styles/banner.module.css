@@ -1,10 +1,30 @@
 .banner{
     position: relative;
-    
-    /* object-fit: contain; */
-    /* color: white; */
-    /* height: 448px; */
+    height: 100vh;
+    width: 100%;
 }
+
+.banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: .4;
+}
+.banner:after {
+    content: "";
+    position: absolute;
+    top: 93vh;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    background: transparent -webkit-linear-gradient(top,#22002703,#130127) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg,#22002703,#130127) 0 0 no-repeat padding-box;
+    z-index: 9999999;
+    width: 100%;
+}
+    
 .banner__contents{
     margin-left: 30px;
     padding-top: 140px;
@@ -46,4 +66,12 @@
     height: 4.4rem;
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
     
+}
+.bannerTxt {
+    width: 100%;
+    max-width: 45%;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
 }

@@ -9,20 +9,30 @@
     transition-timing-function: ease-in;
     transition: all 0.5s;
 }
+.navbar {
+    padding: 7px 15px;
+}
+.navBrand__container{
+    display: flex;
+    align-items: center;
+}
 .nav__contents{
     display: flex;
     justify-content: space-between;
 }
 .nav__black{
     background-color: #111;
+    opacity: 0.8;
 }
 .nav__logo {
-    position: fixed;
-    top: 10px;
-    left: 0;
-    width: 80px;
+    width: 40px;
     object-fit: contain;
-    padding-left: 20px;
+    cursor: pointer;
+}
+.nav__logo2{
+    left: 0;
+    width: 110px;
+    object-fit: contain;
     cursor: pointer;
 }
 .nav__logo__container{
@@ -49,3 +59,4 @@
     /* width: 30px;
     height: 30px; */
 }
+

@@ -1,8 +1,8 @@
-.container {
+/* .container {
   padding: 0 2rem;
-}
+} */
 
-.main {
+/* .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -126,4 +126,9 @@
   .logo img {
     filter: invert(1);
   }
+} */
+.main__container{
+  background: transparent linear-gradient(0deg,#22002703,#0f0329) 0 0 no-repeat padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

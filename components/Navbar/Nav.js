@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import { Button } from "react-bootstrap";
-// import navbar from "../../styles/nav.module.css";
+import navbarStyle from "../../styles/nav.module.css";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -56,10 +56,21 @@ function Navigation() {
     //     </div>
     //   </div>
     // </div>
-    <div className="main-navbar">
+    <div className={`main-navbar px-4 fixed-top ${show && navbarStyle.nav__black}`}>
       <Navbar expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">
+          <div className={navbarStyle.navBrand__container}>
+          <img
+          className={navbarStyle.nav__logo}
+          src="https://d25s2jqw4qdf1e.cloudfront.net/cdc757ec-0b39-48ba-9030-d9a43fe8a885.png"
+          alt="logo"
+        />
+        <img className={navbarStyle.nav__logo2}
+          src="	https://d25s2jqw4qdf1e.cloudfront.net/a3d80c25-36d4-4ab5-ae5c-037f525889ca.png"
+          alt="logo" />
+          </div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -67,24 +78,17 @@ function Navigation() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
+            <Nav.Link className="text-white text-uppercase" href="/">Home</Nav.Link>
+            <Nav.Link className="text-white ms-4 text-uppercase" href="#action2">Live-Tv</Nav.Link>
+            <Nav.Link className="text-white ms-4 text-uppercase" href="#">
+              Cloud Studio
+            </Nav.Link>
+            <Nav.Link className="text-white ml-3 text-uppercase" href="#">
+              Contact Us
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">        
-                <Button variant="outline-success">GET THE APP</Button>
+          <Form className="d-flex ms-4">        
+                <Button className="getTheAppBtn btn btn-outline-light text-uppercase" variant="outline-success">GET THE APP</Button>
           </Form>
         </Navbar.Collapse>
       </Container>

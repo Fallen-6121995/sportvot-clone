@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import banner from "../../styles/banner.module.css";
 // import axios from "../Axios/axios";
@@ -42,8 +43,19 @@ function Banner() {
     >
       
       <video playsInline={true} autoPlay={true} loop={true} muted={true} src="https://d25s2jqw4qdf1e.cloudfront.net/6d46b3d8-24f6-49cc-b278-cc499e6cc261.m4v" type="video/mp4" style={{width:"100%",  height: "100%" , objectFit:"cover"}}></video>
-      
-      <div className={banner.banner__fadeBottom} />
+      <div className={banner.bannerTxt}>
+        <div className="container-fluid px-4">
+        <h1>Talent Has A New Home</h1>
+        <p>Sportvot is a platform that provides an online channel to stream sports events and help discover sports talent from the grassroots of India.</p>
+        <div>
+          <Link href="https://play.google.com/store/apps/details?id=com.sportvot&amp;hl=en_IN&amp;gl=US">
+            <a>
+            <img src="https://sportvot.com/googleplay.png?imwidth=128" width="8%"/>
+            </a>
+          </Link>
+        </div>
+        </div>
+      </div>
     </header>
   );
 }
