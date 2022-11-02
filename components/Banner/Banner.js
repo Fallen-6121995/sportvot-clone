@@ -64,8 +64,9 @@ function Banner() {
             <Link href="https://play.google.com/store/apps/details?id=com.sportvot&amp;hl=en_IN&amp;gl=US">
               <a>
                 <img
+                 className="me-3"
                   src="https://sportvot.com/googleplay.png?imwidth=128"
-                  width="8%"
+                  width="110px"
                 />
               </a>
             </Link>
@@ -75,16 +76,16 @@ function Banner() {
                 width="8%"
               />
             </span>
-            <div class="MuiBox-root mui-style-wr73px">
+            <div class={`${banner.MuiBox_root_area} mui-style-wr73px`}>
               <span
                 class="MuiRating-root MuiRating-sizeSmall MuiRating-readyOnly mui-style-1a2asoj"
                 role="img"
                 aria-label="5 Stars"
               >
                 <span>
-                  <span class="MuiRating-icon MuiRating-iconFilled mui-style-13m1if9">
+                <span class={`${banner.MuiRating_icon_gold} MuiRating-iconFilled mui-style-13m1if9`}>
                     <svg
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4"
+                      class={`${banner.MuiSvgIcon_root_star} MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4`}
                       focusable="false"
                       aria-hidden="true"
                       viewBox="0 0 24 24"
@@ -95,9 +96,9 @@ function Banner() {
                   </span>
                 </span>
                 <span>
-                  <span class="MuiRating-icon MuiRating-iconFilled mui-style-13m1if9">
+                <span class={`${banner.MuiRating_icon_gold} MuiRating-iconFilled mui-style-13m1if9`}>
                     <svg
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4"
+                     class={`${banner.MuiSvgIcon_root_star} MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4`}
                       focusable="false"
                       aria-hidden="true"
                       viewBox="0 0 24 24"
@@ -108,9 +109,9 @@ function Banner() {
                   </span>
                 </span>
                 <span>
-                  <span class="MuiRating-icon MuiRating-iconFilled mui-style-13m1if9">
+                <span class={`${banner.MuiRating_icon_gold} MuiRating-iconFilled mui-style-13m1if9`}>
                     <svg
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4"
+                      class={`${banner.MuiSvgIcon_root_star} MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4`}
                       focusable="false"
                       aria-hidden="true"
                       viewBox="0 0 24 24"
@@ -121,9 +122,9 @@ function Banner() {
                   </span>
                 </span>
                 <span>
-                  <span class="MuiRating-icon MuiRating-iconFilled mui-style-13m1if9">
+                <span class={`${banner.MuiRating_icon_gold} MuiRating-iconFilled mui-style-13m1if9`}>
                     <svg
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4"
+                      class={`${banner.MuiSvgIcon_root_star} MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4`}
                       focusable="false"
                       aria-hidden="true"
                       viewBox="0 0 24 24"
@@ -134,9 +135,9 @@ function Banner() {
                   </span>
                 </span>
                 <span>
-                  <span class="MuiRating-icon MuiRating-iconFilled mui-style-13m1if9">
+                  <span class={`${banner.MuiRating_icon_gold} MuiRating-iconFilled mui-style-13m1if9`}>
                     <svg
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4"
+                       class={`${banner.MuiSvgIcon_root_star} MuiSvgIcon-fontSizeInherit mui-style-1cw4hi4`}
                       focusable="false"
                       aria-hidden="true"
                       viewBox="0 0 24 24"

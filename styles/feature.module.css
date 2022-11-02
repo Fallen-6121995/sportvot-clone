@@ -26,6 +26,10 @@
 .Feature__Content {
     color: #fff;
     margin-left: 16px;
+    cursor: pointer;
+}
+.Feature__Content:hover h2{
+    color: rgb(0, 130, 213);
 }
 .Feature__Content h2 {
     font-size: 15px;

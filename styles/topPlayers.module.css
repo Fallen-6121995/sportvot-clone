@@ -1,4 +1,37 @@
 .heading{
     color: #fff;
     font-weight: 700;
+    margin-bottom: 2.5rem;
 }
+
+.topPlayersCard {
+    position: relative;
+  }
+.topPlayerImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 76%;
+  transition: 1s ease;
+}
+.topPlayerOne {
+  transition: 1s ease;
+}
+.topPlayerOne:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+.topPlayerImg h6 {
+    color: #fff;
+    margin: 10px 0px 0px;
+}
+.redCircle img{
+  width: 34px;
+  height: 34px;
+}
+
+  

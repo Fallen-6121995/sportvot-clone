@@ -7,7 +7,7 @@ function GetApp() {
     <div>
       <Container>
         <Row>
-          <Col>
+          <Col md={6}>
             <div className={getAppStyles.appContainer}>
               <h2>Download The App</h2>
               <p>
@@ -17,7 +17,7 @@ function GetApp() {
               </p>
             </div>
           </Col>
-          <Col>
+          <Col md={6}>
             <img
               className={getAppStyles.getApp__img}
               src="https://d25s2jqw4qdf1e.cloudfront.net/1deb6428-6387-433e-8f7e-422a2021c30d.png?imwidth=3840"

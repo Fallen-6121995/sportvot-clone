@@ -8,7 +8,7 @@ function Features() {
       <h2 className={`${FeatureCSS.feature__heading} text-center`}>FEATURES</h2>
       <div className="px-4">
         <Container fluid>
-          <Row>
+          <Row className="align-items-center">
             {/* left */}
             <Col lg={4}>
               <div className={FeatureCSS.Feature__row}>
