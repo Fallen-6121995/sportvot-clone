@@ -59,4 +59,29 @@
     /* width: 30px;
     height: 30px; */
 }
+.getTheAppBtn {
+    background: transparent linear-gradient(180deg, #451144 0%, #2E0B37 76%, #0F0326 100%) 0% 0% no-repeat padding-box;
+}
+.getTheAppBtn:hover{
+    color: #fff;
+}
+.liveLink {
+   -webkit-animation: styles_blink__Hnlk_ .5s infinite alternate; 
+    animation: styles_blink__Hnlk_ .5s infinite alternate;
+}
+.LiveLink {
+    -webkit-animation: styles_example__NlI8F 8s infinite alternate;
+    animation: styles_example__NlI8F 8s infinite alternate;
+}
+.LiveLink img {
+    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
 
+.LiveLink h6 {
+    -webkit-animation: styles_example__NlI8F 8s infinite alternate;
+    animation: styles_example__NlI8F 8s infinite alternate;
+}
+
+
+    

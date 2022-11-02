@@ -12,11 +12,26 @@
     color: #fff;
     font-weight: 700;
 }
-/* .feature__icons{
+ .feature__icons img{
     width: 35px;
     height: 35px;
-} */
+    margin-top: 22px;
+} 
+
 .Feature__row{
     display: flex;
-    align-items: center;
+    align-items: start;
+    margin: 22px;
+}
+.Feature__Content {
+    color: #fff;
+    margin-left: 16px;
+}
+.Feature__Content h2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.Feature__Content p {
+    font-size: 12px;
 }

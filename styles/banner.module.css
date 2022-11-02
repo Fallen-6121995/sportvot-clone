@@ -75,3 +75,31 @@
     left: 30px;
     color: #fff;
 }
+
+.mui-style-wr73px {
+    padding-left: 8px;
+    margin-top: 8px;
+}
+.MuiRating-root {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    font-size: 1.125rem;
+    color: #faaf00;
+    cursor: pointer;
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: none;
+}
+
+.MuiRating-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    pointer-events: none;
+}
