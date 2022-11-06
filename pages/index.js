@@ -8,6 +8,7 @@ import ResponsiveCarousel from "../components/Carousel/Carousel";
 import TopPlayers from "../components/TopPlayers/TopPlayers";
 import GetApp from "../components/GetApp/GetApp";
 import HappyUsers from "../components/HappyUsers/HappyUsers";
+import ContactUs from "../components/ContactUs/ContactUs";
 
 export default function Home() {
   return (
@@ -34,6 +35,8 @@ export default function Home() {
       <GetApp />
 
       <HappyUsers />
+
+      <ContactUs />
     </div>
   );
 }
