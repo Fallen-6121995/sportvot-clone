@@ -33,24 +33,3 @@
   width: 34px;
   height: 34px;
 }
-
-.countriesMain {
-  padding: 5vw;
-  background-color: #7a7c8e17;
-  border: 1px solid #ffffff40;
-  border-radius: 10px;
-}
-
-.getTheApp{
-  padding: 2vw;
-  background-color: #7a7c8e17;
-  border: 1px solid #ffffff40;
-  border-radius: 10px;
-}
-.getTheAppBtn {
-  background: transparent linear-gradient(180deg, #451144 0%, #2E0B37 76%, #0F0326 100%) 0% 0% no-repeat padding-box;
-  
-}
-.getTheAppBtn:hover {
-  color: #fff;
-}
