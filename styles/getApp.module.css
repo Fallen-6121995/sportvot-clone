@@ -7,3 +7,7 @@
 .getApp__img{
     width: 100%;
 }
+
+.downloadAppSec {
+    background: transparent linear-gradient(180deg,#0f0329,#0f0329) 0 0 no-repeat padding-box;
+}

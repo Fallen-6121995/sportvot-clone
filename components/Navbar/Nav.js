@@ -78,14 +78,13 @@ function Navigation() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="ms-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
               navbarScroll
             >
               <Nav.Link className="text-white text-uppercase" href="/">
                 Home
               </Nav.Link>
               <Nav.Link
-                className="text-white ms-4 text-uppercase"
+                className="text-white ms-md-4 text-uppercase"
                 href="#action2"
               >
                 <div className={navbarStyle.LiveLink}>
@@ -97,14 +96,14 @@ function Navigation() {
                   Live-Tv
                 </div>
               </Nav.Link>
-              <Nav.Link className="text-white ms-4 text-uppercase" href="#">
+              <Nav.Link className="text-white ms-md-4 text-uppercase" href="#">
                 Cloud Studio
               </Nav.Link>
-              <Nav.Link className="text-white ml-3 text-uppercase" href="#">
+              <Nav.Link className="text-white ms-md-4 text-uppercase" href="#">
                 Contact Us
               </Nav.Link>
             </Nav>
-            <Form className="d-flex ms-4">
+            <Form className="d-flex ms-md-4">
               <Button
                 className={`${navbarStyle.getTheAppBtn} btn btn-outline-light text-uppercase`}
                 variant="outline-success"

@@ -30,3 +30,40 @@ img {
     background: black;
   }
 } */
+
+
+.react-stacked-center-carousel {
+  height: 418px !important;
+}
+.my-slide-component {
+  max-width: 500px;
+  max-height: 400px;
+  margin: 0 auto;
+}
+/* start  slider css */
+.react-multi-carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end  slider css */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  button.navbar-toggler {
+    background-color: #2074dc;
+  }
+  .main-navbar {
+    background-color: #1c0028;
+    padding-bottom: 10px;
+  }
+ }
+ @media (max-width: 767.98px) { 
+  button.navbar-toggler {
+    background-color: #2074dc;
+  }
+  .main-navbar {
+    background-color: #1c0028;
+    padding-bottom: 10px;
+  }
+
+  }

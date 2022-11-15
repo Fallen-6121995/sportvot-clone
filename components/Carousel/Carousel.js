@@ -4,8 +4,8 @@ import {
   ResponsiveContainer,
 } from "react-stacked-center-carousel";
 import {
-  ArrowRightCircleFill,
-  ArrowLeftCircleFill,
+  ArrowRight,
+  ArrowLeft,
 } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
 import carouselStyle from "../../styles/carousel.module.css";
@@ -65,11 +65,13 @@ export default function ResponsiveCarousel(props) {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div style={{ marginTop: 40, marginBottom: 40 }}>
+    <div>
+      <div className={carouselStyle.nailBitingSection}>
+        <div className="py-5">
       <Container>
         <div className="text-center">
           <h1 className={carouselStyle.heading}>
-            NAIL-BITING MOMENTS CAPTURED VIA SPORTVOT
+            NAIL-BITING MOMENTS CAPTURED VIA <br></br> SPORTVOT
           </h1>
         </div>
         <div style={{ width: "100%", position: "relative" }}>
@@ -97,29 +99,39 @@ export default function ResponsiveCarousel(props) {
             }}
           />
           <>
-            <ArrowLeftCircleFill
+            <ArrowLeft
               style={{
                 position: "absolute",
                 top: "40%",
                 left: 10,
                 zIndex: 10,
-                fontSize: 50,
+                fontSize: 20,
+                padding: "15px",
                 cursor: "pointer",
                 color: "#fff",
+                width: "50px",
+                height: "50px",
+                backgroundColor: "rgba(105, 105, 105, 0.54)",
+                borderRadius: "50px",
               }}
               onClick={() => {
                 ref.current?.goBack();
               }}
             />
-            <ArrowRightCircleFill
+            <ArrowRight
               style={{
                 position: "absolute",
                 top: "40%",
                 right: 10,
                 zIndex: 10,
-                fontSize: 50,
+                width: "50px",
+                height: "50px",
+                fontSize: 20,
+                padding: "15px",
                 cursor: "pointer",
                 color: "#fff",
+                backgroundColor: "rgba(105, 105, 105, 0.54)",
+                borderRadius: "50px",
               }}
               onClick={() => {
                 ref.current?.goNext();
@@ -128,6 +140,8 @@ export default function ResponsiveCarousel(props) {
           </>
         </div>
       </Container>
+      </div>
+      </div>
     </div>
   );
 }

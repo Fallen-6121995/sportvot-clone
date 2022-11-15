@@ -52,9 +52,9 @@ function Banner() {
         type="video/mp4"
         style={{ width: "100%", height: "100%", objectFit: "cover" }}
       ></video>
-      <div className={banner.bannerTxt}>
-        <div className="container-fluid px-4">
-          <h1>Talent Has A New Home</h1>
+      <div className="container-fluid px-4">
+        <div className={banner.bannerTxt}>
+          <h1 className="font-weight-bold">Talent Has A New Home</h1>
           <p>
             Sportvot is a platform that provides an online channel to stream
             sports events and help discover sports talent from the grassroots of

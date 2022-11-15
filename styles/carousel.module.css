@@ -6,6 +6,12 @@
 .crousel__text{
     color: #fff;
     letter-spacing: 2px;
+    background-color: rgb(13, 7, 30);
+    padding: 8px;
+    font-size: 13px;
+    text-transform: capitalize;
+    display: flex;
+
 }
 .crousel__categoryText{
     color: #fff;
@@ -13,3 +19,8 @@
 .crousel__dateText{
     color: #fff;
 }
+
+.nailBitingSection {
+    background: transparent linear-gradient(0deg,#22002703,#0f0329) 0 0 no-repeat padding-box;
+}
+

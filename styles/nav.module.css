@@ -9,6 +9,7 @@
     transition-timing-function: ease-in;
     transition: all 0.5s;
 }
+
 .navbar {
     padding: 7px 15px;
 }
@@ -21,7 +22,7 @@
     justify-content: space-between;
 }
 .nav__black{
-    background-color: #111;
+    background-color: #1c0028;
     opacity: 0.8;
 }
 .nav__logo {
