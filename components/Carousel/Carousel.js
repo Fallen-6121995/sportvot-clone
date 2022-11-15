@@ -6,6 +6,8 @@ import {
 import {
   ArrowRightCircleFill,
   ArrowLeftCircleFill,
+  ArrowLeft,
+  ArrowRight,
 } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
 import carouselStyle from "../../styles/carousel.module.css";
@@ -97,7 +99,7 @@ export default function ResponsiveCarousel(props) {
             }}
           />
           <>
-            <ArrowLeftCircleFill
+            <ArrowLeft
               style={{
                 position: "absolute",
                 top: "40%",
@@ -111,7 +113,7 @@ export default function ResponsiveCarousel(props) {
                 ref.current?.goBack();
               }}
             />
-            <ArrowRightCircleFill
+            <ArrowRight
               style={{
                 position: "absolute",
                 top: "40%",

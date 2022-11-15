@@ -12,6 +12,12 @@ img {
 .heading, .form-text{
   color: #fff;
 }
+.custom__container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* a {
   color: inherit;
   text-decoration: none;
