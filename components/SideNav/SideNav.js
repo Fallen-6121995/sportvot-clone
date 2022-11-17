@@ -25,6 +25,7 @@ function Sidebar() {
 
   const [showProfile, SetShowProfile] = useState(false);
   const [selected, setSelected] = useState(false);
+  const [showSidenav, setShowSidenav] = useState(false);
   // const [show, setShow] = useState(false);
   return (
     <>
@@ -135,7 +136,10 @@ function Sidebar() {
       <Navbar fixed="top" bg="dark" varient="dark" expand={false}>
         <Container fluid>
           <div className="left-items">
-            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+            <Navbar.Toggle
+              onClick={() => setShowSidenav(true)}
+              aria-controls="offcanvasNavbar"
+            />
             {/* <Link to="/"> */}
             <Navbar.Brand>{/* <img src={logo} width={120} /> */}</Navbar.Brand>
             {/* </Link> */}
@@ -150,25 +154,25 @@ function Sidebar() {
               </Button>
             </Navbar.Brand>
           </div>
-          <Navbar.Offcanvas
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-            placement="start"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">
-                {/* <img className="modal-logo" src={logo} /> */}
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                {MenuItems.map((item, index) => {
-                  return (
-                    <div key={index}>
-                      <NavLink className={"sidebarItems"} to={item.url}>
-                        <SidebarRow status={false} title={item.title} />
-                      </NavLink>
-                      {/* {item.dropdown ? (
+          {showSidenav && (
+            <>
+              <Navbar.Offcanvas
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+                placement="start"
+              >
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                  <Nav className="justify-content-end flex-grow-1 pe-3">
+                    {MenuItems.map((item, index) => {
+                      return (
+                        <div key={index}>
+                          <NavLink className={"sidebarItems"} to={item.url}>
+                            <SidebarRow status={false} title={item.title} />
+                          </NavLink>
+                          {/* {item.dropdown ? (
                         <>
                           <div
                             className="dropdownList"
@@ -197,12 +201,14 @@ function Sidebar() {
                           <SidebarRow status={false} title={item.title} />
                         </Link>
                       )} */}
-                    </div>
-                  );
-                })}
-              </Nav>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
+                        </div>
+                      );
+                    })}
+                  </Nav>
+                </Offcanvas.Body>
+              </Navbar.Offcanvas>
+            </>
+          )}
         </Container>
       </Navbar>
       {showProfile && (

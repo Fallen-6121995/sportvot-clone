@@ -1,6 +1,6 @@
 export const MenuItems = [
   {
-    title: "Add Country",
+    title: "Kabaddi",
     url: "/addCountry",
   },
   {
