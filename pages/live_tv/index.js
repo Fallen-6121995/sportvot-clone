@@ -4,6 +4,7 @@ import Link from "next/link";
 import LiveStreamCarousel from "../../components/LiveStreamCarousel/LiveStreamCarousel";
 import Row from "../../components/Row/Row";
 import requests from "../../components/Requests/Requests";
+import Navbar from "../../components/SideNav/SideNav";
 // import VideosCss from "../styles/Videos.module.css";
 
 function LiveTv() {
@@ -335,6 +336,7 @@ function LiveTv() {
   ];
   return (
     <div>
+      <Navbar />
       <div>
         <LiveStreamCarousel liveStreamData={trending} />
       </div>
