@@ -3,7 +3,7 @@ import stats from "../../styles/stats.module.css";
 
 function Stats() {
   return (
-    <div>
+    <div className={stats.countriesSection}>
       <div className="py-5">
         <div className="container">
           <div className={stats.countriesMain}>

@@ -177,6 +177,162 @@ function LiveTv() {
       loc: "Jalgaon , Maharashtra",
     },
   ];
+  const replays = [
+    {
+      game_id: 10198,
+      gamename: "Free Fire MAX",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "yxSBXY",
+      total_videos: 1063,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 11,
+      gamename: "Garena Free Fire",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "garenafreefire",
+      total_videos: 951,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 16172,
+      gamename: "Valorant",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "valorant",
+      total_videos: 808,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 26908,
+      gamename: "Battlegrounds India",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "QYFCzK",
+      total_videos: 552,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 1,
+      gamename: "PUBG MOBILE",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "pubgmobile",
+      total_videos: 307,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 1,
+      gamename: "PUBG MOBILE",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "pubgmobile",
+      total_videos: 307,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 1,
+      gamename: "PUBG MOBILE",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "pubgmobile",
+      total_videos: 307,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 1,
+      gamename: "PUBG MOBILE",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "pubgmobile",
+      total_videos: 307,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 1,
+      gamename: "PUBG MOBILE",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "pubgmobile",
+      total_videos: 307,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 1,
+      gamename: "PUBG MOBILE",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "pubgmobile",
+      total_videos: 307,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+    {
+      game_id: 1,
+      gamename: "PUBG MOBILE",
+      game_image:
+        "https://d25s2jqw4qdf1e.cloudfront.net/709ee108-2fee-4120-9443-48b14473b4e8.webp?imwidth=3840",
+      game_url: "pubgmobile",
+      total_videos: 307,
+      title:
+        "49th Kumar and Kumari Gut Jilha Ajinkyapad Chachni Kabaddi Spardha 2022",
+      date: "Nov 11, 2022",
+      loc: "Jalgaon , Maharashtra",
+      user_img:
+        "https://d25s2jqw4qdf1e.cloudfront.net/716da40f-8177-46f0-a600-ae8d380559e6.webp?imwidth=3840",
+    },
+  ];
   return (
     <div>
       <div>
@@ -184,6 +340,28 @@ function LiveTv() {
       </div>
       <div>
         <Row title="Event" fetchUrl={events} />
+      </div>
+      <div>
+        <Row title="Replays" fetchUrl={replays} icon={true} userImg={true} />
+      </div>
+      <div>
+        <Row
+          title="One Man Show"
+          fetchUrl={replays}
+          icon={true}
+          userImg={true}
+        />
+      </div>
+      <div>
+        <Row title="All Sports" fetchUrl={replays} icon={true} userImg={true} />
+      </div>
+      <div>
+        <Row
+          title="Top Highlights"
+          fetchUrl={replays}
+          icon={true}
+          userImg={true}
+        />
       </div>
     </div>
   );

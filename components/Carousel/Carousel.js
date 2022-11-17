@@ -3,12 +3,7 @@ import {
   StackedCarousel,
   ResponsiveContainer,
 } from "react-stacked-center-carousel";
-import {
-  ArrowRightCircleFill,
-  ArrowLeftCircleFill,
-  ArrowLeft,
-  ArrowRight,
-} from "react-bootstrap-icons";
+import { ArrowRight, ArrowLeft } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
 import carouselStyle from "../../styles/carousel.module.css";
 
@@ -57,7 +52,7 @@ export const data = [
   },
 ];
 
-export default function ResponsiveCarousel(props) {
+function ResponsiveCarousel(props) {
   const ref = React.useRef();
   useEffect(() => {
     const interval = setInterval(() => {
@@ -71,7 +66,7 @@ export default function ResponsiveCarousel(props) {
       <Container>
         <div className="text-center">
           <h1 className={carouselStyle.heading}>
-            NAIL-BITING MOMENTS CAPTURED VIA SPORTVOT
+            NAIL-BITING MOMENTS CAPTURED VIA <br></br> SPORTVOT
           </h1>
         </div>
         <div style={{ width: "100%", position: "relative" }}>
@@ -105,9 +100,14 @@ export default function ResponsiveCarousel(props) {
                 top: "40%",
                 left: 10,
                 zIndex: 10,
-                fontSize: 50,
+                fontSize: 20,
+                padding: "15px",
                 cursor: "pointer",
                 color: "#fff",
+                width: "50px",
+                height: "50px",
+                backgroundColor: "rgba(105, 105, 105, 0.54)",
+                borderRadius: "50px",
               }}
               onClick={() => {
                 ref.current?.goBack();
@@ -119,9 +119,14 @@ export default function ResponsiveCarousel(props) {
                 top: "40%",
                 right: 10,
                 zIndex: 10,
-                fontSize: 50,
+                width: "50px",
+                height: "50px",
+                fontSize: 20,
+                padding: "15px",
                 cursor: "pointer",
                 color: "#fff",
+                backgroundColor: "rgba(105, 105, 105, 0.54)",
+                borderRadius: "50px",
               }}
               onClick={() => {
                 ref.current?.goNext();
@@ -174,3 +179,4 @@ export const Card = React.memo(function (props) {
     </div>
   );
 });
+export default ResponsiveCarousel;

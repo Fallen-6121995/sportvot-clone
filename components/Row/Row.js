@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import axios from "../Axios/axios";
 import styles from "../../styles/row.module.css";
 import { Container } from "react-bootstrap";
+import { Calendar2Event } from "react-bootstrap-icons";
+import { GeoAltFill } from "react-bootstrap-icons";
 
-function Row({ title, fetchUrl }) {
+function Row({ title, fetchUrl, icon, userImg }) {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -20,7 +22,7 @@ function Row({ title, fetchUrl }) {
   }, [fetchUrl]);
   return (
     <div className={`${styles.video__row} custom__container`}>
-      <h2>{title}</h2>
+      <h5 className={styles.video__rowTitle}>{title}</h5>
 
       <div className={styles.mainPosters__row}>
         {videos?.map((video) => (
@@ -39,9 +41,58 @@ function Row({ title, fetchUrl }) {
                 </div>
 
                 <div className={styles.video__info}>
-                  <p>{video?.title}</p>
-                  <p>{video?.date}</p>
-                  <p>{video?.loc}</p>
+                  {userImg == true ? (
+                    <>
+                      <div>
+                        <img width={100} src={video?.user_img} />
+                      </div>
+                      <div>
+                        <p>{video?.title}</p>
+
+                        {icon == true ? (
+                          <p>
+                            <span className={styles.subheadingIcon}>
+                              <Calendar2Event />
+                            </span>
+                            {video?.date}
+                          </p>
+                        ) : (
+                          <p> {video?.date}</p>
+                        )}
+
+                        <p>
+                          <span className={styles.subheadingIcon}>
+                            <GeoAltFill />
+                          </span>
+                          {video?.loc}
+                        </p>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div>
+                        <p>{video?.title}</p>
+
+                        {icon == true ? (
+                          <p>
+                            <span className={styles.subheadingIcon}>
+                              <Calendar2Event />
+                            </span>
+                            {video?.date}
+                          </p>
+                        ) : (
+                          <p> {video?.date}</p>
+                        )}
+
+                        <p>
+                          <span className={styles.subheadingIcon}>
+                            <GeoAltFill />
+                          </span>
+                          {video?.loc}
+                        </p>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

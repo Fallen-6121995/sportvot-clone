@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { PlayBtn } from "react-bootstrap-icons";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navigation() {
@@ -76,35 +77,29 @@ function Navigation() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="ms-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
-              navbarScroll
-            >
+            <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
               <Nav.Link className="text-white text-uppercase" href="/">
                 Home
               </Nav.Link>
               <Nav.Link
-                className="text-white ms-4 text-uppercase"
-                href="#action2"
+                className="text-white ms-md-4 text-uppercase"
+                href="/live_tv"
               >
                 <div className={navbarStyle.LiveLink}>
-                  <img
-                    className="Live-Tv"
-                    src="../images/LiveTv.svg"
-                    alt="Live"
-                  />{" "}
+                  <div className={navbarStyle.liveIcon}>
+                    <PlayBtn color="#ff0000" fontSize={20} />
+                  </div>
                   Live-Tv
                 </div>
               </Nav.Link>
-              <Nav.Link className="text-white ms-4 text-uppercase" href="#">
+              <Nav.Link className="text-white ms-md-4 text-uppercase" href="#">
                 Cloud Studio
               </Nav.Link>
-              <Nav.Link className="text-white ml-3 text-uppercase" href="#">
+              <Nav.Link className="text-white ms-md-4 text-uppercase" href="#">
                 Contact Us
               </Nav.Link>
             </Nav>
-            <Form className="d-flex ms-4">
+            <Form className="d-flex ms-md-4">
               <Button
                 className={`${navbarStyle.getTheAppBtn} btn btn-outline-light text-uppercase`}
                 variant="outline-success"

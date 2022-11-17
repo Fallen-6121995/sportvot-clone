@@ -9,6 +9,7 @@
     transition-timing-function: ease-in;
     transition: all 0.5s;
 }
+
 .navbar {
     padding: 7px 15px;
 }
@@ -21,7 +22,7 @@
     justify-content: space-between;
 }
 .nav__black{
-    background-color: #111;
+    background-color: #1c0028;
     opacity: 0.8;
 }
 .nav__logo {
@@ -72,6 +73,12 @@
 .LiveLink {
     -webkit-animation: styles_example__NlI8F 8s infinite alternate;
     animation: styles_example__NlI8F 8s infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.liveIcon{
+    margin-right: 10px;
 }
 .LiveLink img {
     -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;

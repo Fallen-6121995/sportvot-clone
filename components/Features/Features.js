@@ -10,7 +10,7 @@ function Features() {
         <Container fluid>
           <Row className="align-items-center">
             {/* left */}
-            <Col lg={4}>
+            <Col md={4}>
               <div className={FeatureCSS.Feature__row}>
                 <div className={FeatureCSS.feature__icons}>
                   <img
@@ -81,7 +81,7 @@ function Features() {
               </div>
             </Col>
             {/* center */}
-            <Col>
+            <Col md={4}>
               <div className="text-center">
                 <img
                   alt="benefits"
@@ -94,7 +94,7 @@ function Features() {
               </div>
             </Col>
 
-            <Col>
+            <Col md={4}>
               <div className={FeatureCSS.Feature__row}>
                 <div className={FeatureCSS.feature__icons}>
                   <img

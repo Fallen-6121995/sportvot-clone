@@ -3,6 +3,7 @@
     background-color: #7a7c8e17;
     border: 1px solid #ffffff40;
     border-radius: 10px;
+    width: 100%;
   }
   .getTheAppBtn {
     background: transparent linear-gradient(180deg, #451144 0%, #2E0B37 76%, #0F0326 100%) 0% 0% no-repeat padding-box;
@@ -11,3 +12,13 @@
   .getTheAppBtn:hover {
     color: #fff;
   }
+.getTheAppSection {
+  background: transparent linear-gradient(0deg,#180118,#390539) 0 0 no-repeat;
+}
+
+@media (max-width: 767.98px) { 
+  .getTheApp {
+     max-width: 95%;
+     margin: 0 auto;
+  }
+ }

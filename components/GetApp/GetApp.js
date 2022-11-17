@@ -4,7 +4,7 @@ import getAppStyles from "../../styles/getApp.module.css";
 
 function GetApp() {
   return (
-    <div>
+    <div className={getAppStyles.downloadAppSec}>
       <Container>
         <Row>
           <Col md={6}>

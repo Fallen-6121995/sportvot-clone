@@ -33,3 +33,14 @@
   width: 34px;
   height: 34px;
 }
+
+.footSocialIcon img{
+  width: 100%;
+  max-width: 15px;
+}
+.footerInner {
+  font-size: 12px;
+}
+.topPlayersSec {
+  background: transparent linear-gradient(180deg,#22002703,#0f0329) 0 0 no-repeat padding-box;
+}
