@@ -31,6 +31,7 @@ function Sidebar() {
     <>
       <style jsx>
         {`
+        
           ::-webkit-scrollbar {
             width: 8px;
             /* Optional: just make scrollbar invisible */
@@ -45,7 +46,8 @@ function Sidebar() {
           .logout {
             cursor: pointer;
           }
-
+            z-index: 1045;
+          }
           .navbar-toggler:focus,
           .btn-close:focus {
             box-shadow: none !important;
