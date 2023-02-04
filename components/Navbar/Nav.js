@@ -8,6 +8,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { PlayBtn } from "react-bootstrap-icons";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Link from "next/link";
 
 function Navigation() {
   const [show, setShow] = useState(false);
@@ -78,9 +79,9 @@ function Navigation() {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
-              <Nav.Link className="text-white text-uppercase" href="/">
+              <Link className="text-white text-uppercase" href="/">
                 Home
-              </Nav.Link>
+              </Link>
               <Nav.Link
                 className="text-white ms-md-4 text-uppercase"
                 href="/live_tv"

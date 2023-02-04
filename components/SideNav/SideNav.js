@@ -11,6 +11,7 @@ import {
 //Custom Component
 import SidebarRow from "../SideNav/SidebarRow/SidebarRow";
 import { MenuItems } from "../SideNav/MenuItems/MenuItems";
+import { List } from "react-bootstrap-icons";
 // import logo from "../../../Assets/Images/logo.svg";
 // import { removeUserSession } from "../../../Utils/Common/Common";
 import "../../styles/sidebar.module.css";
@@ -41,6 +42,10 @@ function Sidebar() {
             border-radius: 1px;
             background-color: #d3d3d3;
             height: 80px;
+          }
+
+          .left-items{
+            display:flex;
           }
 
           .logout {
@@ -83,9 +88,9 @@ function Sidebar() {
             width: 260px;
           }
 
-          .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-          }
+          // .navbar-toggler-icon {
+          //   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+          // }
 
           .btn-close {
             background-image: url("../../../Assets/Images/close.svg") !important;
@@ -137,24 +142,40 @@ function Sidebar() {
       </style>
       <Navbar fixed="top" bg="dark" varient="dark" expand={false}>
         <Container fluid>
-          <div className="left-items">
-            <Navbar.Toggle
-              onClick={() => setShowSidenav(true)}
-              aria-controls="offcanvasNavbar"
-            />
-            {/* <Link to="/"> */}
-            <Navbar.Brand>{/* <img src={logo} width={120} /> */}</Navbar.Brand>
-            {/* </Link> */}
-          </div>
-          <div className="right-items">
-            <Navbar.Brand>
-              <Button
-                onClick={() => SetShowProfile(!showProfile)}
-                className="btn-sm user-btn"
+          <div>
+            <div className="left-items">
+              <Navbar.Toggle
+                onClick={() => setShowSidenav(true)}
+                aria-controls="offcanvasNavbar"
               >
-                username
-              </Button>
-            </Navbar.Brand>
+                <List />
+              </Navbar.Toggle>
+              {/* <Link to="/"> */}
+              <Navbar.Brand>
+                {/* <img src={logo} width={120} /> */}
+              </Navbar.Brand>
+              <div>
+                <Nav className="me-auto">
+                  <Nav.Link href="#home">Kabaddi</Nav.Link>
+                  <Nav.Link href="#features">Football</Nav.Link>
+                  <Nav.Link href="#pricing">Cricket</Nav.Link>
+                  <Nav.Link href="#pricing">Baskeball</Nav.Link>
+                  <Nav.Link href="#pricing">Volleyball</Nav.Link>
+                  <Nav.Link href="#pricing">Others</Nav.Link>
+                </Nav>
+              </div>
+              {/* </Link> */}
+            </div>
+            <div className="right-items">
+              <Navbar.Brand>
+                <Button
+                  onClick={() => SetShowProfile(!showProfile)}
+                  className="btn-sm user-btn"
+                >
+                  username
+                </Button>
+              </Navbar.Brand>
+            </div>
           </div>
           {showSidenav && (
             <>
@@ -171,9 +192,11 @@ function Sidebar() {
                     {MenuItems.map((item, index) => {
                       return (
                         <div key={index}>
-                          <NavLink className={"sidebarItems"} to={item.url}>
-                            <SidebarRow status={false} title={item.title} />
-                          </NavLink>
+                          <Link className={"sidebarItems"} href={item.url}>
+                            <a>
+                              <SidebarRow status={false} title={item.title} />
+                            </a>
+                          </Link>
                           {/* {item.dropdown ? (
                         <>
                           <div

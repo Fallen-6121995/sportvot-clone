@@ -1,14 +1,13 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import LiveStreamCarousel from "../../components/LiveStreamCarousel/LiveStreamCarousel";
-import Row from "../../components/Row/Row";
-import TopPlayers from "../../components/TopPlayers/TopPlayers";
-import requests from "../../components/Requests/Requests";
-import Navbar from "../../components/SideNav/SideNav";
+import LiveStreamCarousel from "../components/LiveStreamCarousel/LiveStreamCarousel";
+import Row from "../components/Row/Row";
+import requests from "../components/Requests/Requests";
+import Navbar from "../components/SideNav/SideNav";
 // import VideosCss from "../styles/Videos.module.css";
 
-function LiveTv() {
+function Kabaddi() {
   const trending = [
     {
       total_viewers: 100,
@@ -366,11 +365,8 @@ function LiveTv() {
           userImg={true}
         />
       </div>
-      <div>
-        <TopPlayers />
-      </div>
     </div>
   );
 }
 
-export default LiveTv;
+export default Kabaddi;

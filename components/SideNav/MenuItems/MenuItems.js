@@ -1,26 +1,22 @@
 export const MenuItems = [
   {
-    title: "Kabaddi",
-    url: "/addCountry",
+    title: "Home",
+    url: "/live_tv",
   },
   {
-    title: "Show Countries",
-    url: "/showCountries",
+    title: "Events",
+    url: "/events",
   },
   {
-    title: "Add Server",
-    url: "/addServer",
+    title: "Sports",
+    url: "/sports",
   },
   {
-    title: "Show Servers",
-    url: "/ShowServers",
+    title: "Sportvot Studio",
+    url: "/studio",
   },
   {
-    title: "Add FAQ",
-    url: "/addFaq",
-  },
-  {
-    title: "All FAQ",
-    url: "/allFaq",
+    title: "Products & Services",
+    url: "/products",
   },
 ];
