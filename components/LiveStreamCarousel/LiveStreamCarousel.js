@@ -38,9 +38,12 @@ function LiveStreamCarousel({ liveStreamData }) {
         <Carousel indicators={false} className={liveStreamCarouselStyle.gh78}>
           {liveStreamData?.map((item, index) => (
             <Carousel.Item key={index}>
+              
+              <Link href={"/live-streaming/" + item.streamkey}>
+              <a className={liveStreamCarouselStyle.slidergameNameLink}>
               <Row>
                 <Col lg={4}>
-                  <div>
+                  <div className={liveStreamCarouselStyle.gameNameLeftContent}>
                     <span className={liveStreamCarouselStyle.gameName}>
                       {item.game}
                     </span>
@@ -69,15 +72,14 @@ function LiveStreamCarousel({ liveStreamData }) {
                       {item.video_type}
                     </div>
                   </div>
-                  <Link href={"/live-streaming/" + item.streamkey}>
-                    <a>
                       <div className={liveStreamCarouselStyle.trenvid23}>
                         <img src={item.video_image} alt="terndingimage"></img>
                       </div>
-                    </a>
-                  </Link>
                 </Col>
-              </Row>
+                </Row>
+                </a>
+                </Link>
+             
             </Carousel.Item>
           ))}
         </Carousel>
