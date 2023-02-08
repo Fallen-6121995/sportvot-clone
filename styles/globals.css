@@ -2301,10 +2301,13 @@ justify-content: space-between;
   /*--live page css--*/
 
   .offcanvas {
-    z-index: 1045 !important;
+    z-index: 1018 !important;
     background: transparent linear-gradient(180deg,#180118,#390539) 0 0 no-repeat !important;
   }
-
+  .offcanvas-backdrop{
+    z-index: 1018 !important;
+    background-color: rgba(255, 255, 255, 0.531) !important;
+  }
   .fixed-top {
     z-index: 1050 !important;
   }
