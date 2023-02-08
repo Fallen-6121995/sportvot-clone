@@ -337,7 +337,7 @@ function LiveTv() {
   ];
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <div>
         <LiveStreamCarousel liveStreamData={trending} />
       </div>

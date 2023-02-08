@@ -79,9 +79,9 @@ function Navigation() {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
-              <Link className="text-white text-uppercase" href="/">
+              <Nav.Link className="text-white text-uppercase" href="/">
                 Home
-              </Link>
+              </Nav.Link>
               <Nav.Link
                 className="text-white ms-md-4 text-uppercase"
                 href="/live_tv"

@@ -16,7 +16,7 @@ import { List } from "react-bootstrap-icons";
 // import { removeUserSession } from "../../../Utils/Common/Common";
 import "../../styles/sidebar.module.css";
 
-function Sidebar() {
+function Sidebar({ showTopItems }) {
   // const history = useHistory();
 
   // const logout = () => {
@@ -42,6 +42,23 @@ function Sidebar() {
             border-radius: 1px;
             background-color: #d3d3d3;
             height: 80px;
+          }
+
+          .all-nav-items{
+            display:flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items:center;
+          }
+          
+          .topbar-links{
+            display:flex !important;
+            flex-direction:row !important;
+          }
+
+          .my-offcanvas .offcanvas-backdrop{
+            z-index:1018 !important;
+            background-color:#fff !important;
           }
 
           .left-items{
@@ -140,64 +157,86 @@ function Sidebar() {
           }
         `}
       </style>
-      <Navbar fixed="top" bg="dark" varient="dark" expand={false}>
-        <Container fluid>
-          <div>
-            <div className="left-items">
-              <Navbar.Toggle
-                onClick={() => setShowSidenav(true)}
-                aria-controls="offcanvasNavbar"
-              >
-                <List />
-              </Navbar.Toggle>
-              {/* <Link to="/"> */}
-              <Navbar.Brand>
-                {/* <img src={logo} width={120} /> */}
-              </Navbar.Brand>
-              <div>
-                <Nav className="me-auto">
-                  <Nav.Link href="#home">Kabaddi</Nav.Link>
-                  <Nav.Link href="#features">Football</Nav.Link>
-                  <Nav.Link href="#pricing">Cricket</Nav.Link>
-                  <Nav.Link href="#pricing">Baskeball</Nav.Link>
-                  <Nav.Link href="#pricing">Volleyball</Nav.Link>
-                  <Nav.Link href="#pricing">Others</Nav.Link>
-                </Nav>
-              </div>
-              {/* </Link> */}
-            </div>
-            <div className="right-items">
-              <Navbar.Brand>
-                <Button
-                  onClick={() => SetShowProfile(!showProfile)}
-                  className="btn-sm user-btn"
+      <div className="my-navbar">
+        <Navbar sticky="top" bg="dark" varient="dark" expand={false}>
+          <Container fluid>
+            <div className="all-nav-items">
+              <div className="left-items">
+                <Navbar.Toggle
+                  onClick={() => setShowSidenav(true)}
+                  aria-controls="offcanvasNavbar"
                 >
-                  username
-                </Button>
-              </Navbar.Brand>
+                  <List />
+                </Navbar.Toggle>
+                {/* <Link to="/"> */}
+                <Navbar.Brand>
+                  {/* <img src={logo} width={120} /> */}
+                </Navbar.Brand>
+                {showTopItems && (
+                  <div>
+                    <Nav
+                      style={{ display: "flex", flexDirection: "row" }}
+                      className="me-auto"
+                    >
+                      <Nav.Link className="mx-2" href="#home">
+                        Kabaddi
+                      </Nav.Link>
+                      <Nav.Link className="mx-2" href="#features">
+                        Football
+                      </Nav.Link>
+                      <Nav.Link className="mx-2" href="#pricing">
+                        Cricket
+                      </Nav.Link>
+                      <Nav.Link className="mx-2" href="#pricing">
+                        Baskeball
+                      </Nav.Link>
+                      <Nav.Link className="mx-2" href="#pricing">
+                        Volleyball
+                      </Nav.Link>
+                      <Nav.Link className="mx-2" href="#pricing">
+                        Others
+                      </Nav.Link>
+                    </Nav>
+                  </div>
+                )}
+                {/* </Link> */}
+              </div>
+              <div className="right-items">
+                <Navbar.Brand>
+                  <Button
+                    onClick={() => SetShowProfile(!showProfile)}
+                    className="btn-sm user-btn"
+                  >
+                    Sign In
+                  </Button>
+                </Navbar.Brand>
+              </div>
             </div>
-          </div>
-          {showSidenav && (
-            <>
-              <Navbar.Offcanvas
-                id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel"
-                placement="start"
-              >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    {MenuItems.map((item, index) => {
-                      return (
-                        <div key={index}>
-                          <Link className={"sidebarItems"} href={item.url}>
-                            <a>
-                              <SidebarRow status={false} title={item.title} />
-                            </a>
-                          </Link>
-                          {/* {item.dropdown ? (
+            {showSidenav && (
+              <>
+                <div className="my-offcanvas">
+                  <Navbar.Offcanvas
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                    placement="start"
+                  >
+                    <Offcanvas.Header closeButton>
+                      <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
+                    </Offcanvas.Header>
+                    <Offcanvas.Body>
+                      <Nav className="justify-content-end flex-grow-1 pe-3">
+                        {MenuItems.map((item, index) => {
+                          return (
+                            <div key={index}>
+                              <Link className={"sidebarItems"} href={item.url}>
+                                <a>
+                                  <SidebarRow
+                                    status={false}
+                                    title={item.title}
+                                  />
+                                </a>
+                              </Link>
+                              {/* {item.dropdown ? (
                         <>
                           <div
                             className="dropdownList"
@@ -226,16 +265,18 @@ function Sidebar() {
                           <SidebarRow status={false} title={item.title} />
                         </Link>
                       )} */}
-                        </div>
-                      );
-                    })}
-                  </Nav>
-                </Offcanvas.Body>
-              </Navbar.Offcanvas>
-            </>
-          )}
-        </Container>
-      </Navbar>
+                            </div>
+                          );
+                        })}
+                      </Nav>
+                    </Offcanvas.Body>
+                  </Navbar.Offcanvas>
+                </div>
+              </>
+            )}
+          </Container>
+        </Navbar>
+      </div>
       {showProfile && (
         <div className="avatar-dropdown">
           <h4 className="avatar-item">
