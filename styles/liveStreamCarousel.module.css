@@ -138,6 +138,9 @@
     line-height: 1.3;
     margin-right: 5px;
   }
+  .chat_container{
+    text-align: center;
+  }
   .viewsIcon{
     margin-right: 3px;
   }
