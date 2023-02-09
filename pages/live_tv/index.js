@@ -11,6 +11,7 @@ import Navbar from "../../components/SideNav/SideNav";
 function LiveTv() {
   const trending = [
     {
+      id: 1,
       total_viewers: 100,
       video_title:
         "Final Part 2|  COEP VS SHAHU COLLEGE | Intercollegiate Volleyball Men's Tournament |",
@@ -23,6 +24,7 @@ function LiveTv() {
         "https://d25s2jqw4qdf1e.cloudfront.net/02c3b507-6269-40a7-8614-1e988acbb8ea.webp?imwidth=1920",
     },
     {
+      id: 2,
       total_viewers: 50,
       video_title: "SIT Pune VS SLS Pune",
       game: "Football",
@@ -34,6 +36,7 @@ function LiveTv() {
         "https://d25s2jqw4qdf1e.cloudfront.net/6bad02c4-150d-42f3-93d1-50ef00f60181.webp?imwidth=1920",
     },
     {
+      id: 3,
       total_viewers: 70,
       video_title: "Mumbai Marines Vs Bombay GYM ",
       game: "Football",
@@ -337,7 +340,7 @@ function LiveTv() {
   ];
   return (
     <div>
-      <Navbar />
+      <Navbar showTopItems={true} />
       <div>
         <LiveStreamCarousel liveStreamData={trending} />
       </div>

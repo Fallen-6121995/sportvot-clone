@@ -9,9 +9,15 @@ const SidebarRow = ({ selected, Icon, title, status }) => {
           .sidebarRow {
             display: flex;
             align-items: center;
-            padding: 15px 20px;
+            padding: 8px 16px;
+            transition: background-color 0.75s ease 0s;
+            margin: 0px 0px 8px;
           }
-
+         
+          .sidebarRow:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+          }
+         
           .sidebarRow__icon {
             color: #fff;
             font-size: 1.4rem !important;
@@ -30,15 +36,13 @@ const SidebarRow = ({ selected, Icon, title, status }) => {
             cursor: pointer;
           }
 
-          .sidebarRow:hover > .sidebarRow__title {
-            font-weight: bold;
-          }
+         
         `}
       </style>
       <>
         <div className={`sidebarRow ${selected && "selected"}`}>
           {status ? <Icon className="sidebarRow__icon" /> : null}
-          <h2 className="sidebarRow__title">{title}</h2>
+          <h2 className="sidebarRow__title text-white">{title}</h2>
           {/* {MenuItems.map((items, index) => {
       {
         items.dropdown && (

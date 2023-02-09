@@ -17,6 +17,23 @@ body {
 img {
   max-width: 100%;
 }
+a {
+  text-decoration: none !important;
+}
+/* start side bar css */
+.pe-3.navbar-nav {
+  padding: 0px !important;
+  margin-top: 10px;
+}
+.offcanvas-body {
+  padding: 8px 0px !important;
+}
+.sidebarItems {
+  text-decoration: none;
+  color: white;
+}
+/* end side bar css */
+
 .heading, .form-text{
   color: #fff;
 }
@@ -2332,4 +2349,35 @@ justify-content: space-between;
   }
   .nav-link .sidebarRow {
     padding: 0px !important;
+  }
+  .tab234 .nav-link {
+    background-color: transparent !important;
+    color: #8a8a89 !important;
+    font-size: 12px;
+    border: none !important;
+    border-bottom: 3px solid transparent !important;
+    letter-spacing: 1px;
+    z-index: 9;
+    position: inherit !important;
+    margin-bottom: 10px;
+  }
+  
+  .tab234 .nav-link.active {
+    background-color: transparent !important;
+    color: #dedddb !important;
+    font-weight: 500;
+    border-bottom: 3px solid rgb(0, 130, 213) !important;
+  }
+  .tab234 .nav-link {
+    font-size: 12px;
+    color: #fff !important;
+    text-transform: uppercase;
+  }
+  .tab234  .nav-tabs {
+    border-bottom: transparent !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }

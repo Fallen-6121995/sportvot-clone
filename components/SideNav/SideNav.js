@@ -173,27 +173,27 @@ function Sidebar({ showTopItems }) {
                   {/* <img src={logo} width={120} /> */}
                 </Navbar.Brand>
                 {showTopItems && (
-                  <div>
+                  <div className="text-white">
                     <Nav
                       style={{ display: "flex", flexDirection: "row" }}
                       className="me-auto"
                     >
-                      <Nav.Link className="mx-2" href="#home">
+                      <Nav.Link className="mx-2 text-white px-2" href="#home">
                         Kabaddi
                       </Nav.Link>
-                      <Nav.Link className="mx-2" href="#features">
+                      <Nav.Link className="mx-2 text-white px-2" href="#features">
                         Football
                       </Nav.Link>
-                      <Nav.Link className="mx-2" href="#pricing">
+                      <Nav.Link className="mx-2 text-white px-2" href="#pricing">
                         Cricket
                       </Nav.Link>
-                      <Nav.Link className="mx-2" href="#pricing">
+                      <Nav.Link className="mx-2 text-white px-2" href="#pricing">
                         Baskeball
                       </Nav.Link>
-                      <Nav.Link className="mx-2" href="#pricing">
+                      <Nav.Link className="mx-2 text-white px-2" href="#pricing">
                         Volleyball
                       </Nav.Link>
-                      <Nav.Link className="mx-2" href="#pricing">
+                      <Nav.Link className="mx-2 text-white px-2" href="#pricing">
                         Others
                       </Nav.Link>
                     </Nav>

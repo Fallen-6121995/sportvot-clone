@@ -1,3 +1,18 @@
+
+.mainPostersRowSlider {
+    position: relative;
+}
+
+.PostersSliderLeftBtn {
+    position: absolute;
+    top: 100px;
+    left: 25px;
+}
+.PostersSliderRightBtn {
+    position: absolute;
+    top: 100px;
+    right: 25px;
+}
 .video__row{
     margin: 25px 0;
 }
